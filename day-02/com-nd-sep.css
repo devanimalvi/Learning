@@ -1,0 +1,91 @@
+/* ===========================
+   SEPARATORS
+=========================== */
+
+/* Curly braces { } wrap the rules */
+.container {
+  
+  /* Colon : separates property and value */
+  font-family: Arial;
+
+  /* Semicolon ; ends each property */
+  padding: 20px;
+}
+
+/* Comma , separates multiple selectors */
+h1, h2 {
+  color: blue;
+}
+
+/* Parentheses ( ) used in CSS functions */
+.container {
+  width: calc(100% - 40px);
+}
+
+/* Slash / used in shorthand */
+p {
+  font: 16px/1.5 Arial;
+}
+
+/* Double colon :: for pseudo-elements */
+.pseudo::first-letter {
+  font-size: 40px;
+  color: red;
+}
+
+/* ===========================
+   COMBINATORS
+=========================== */
+
+/* 1. Descendant (space) → p inside .box */
+.box p {
+  color: green;
+}
+
+#myId > .myClass {
+  outline: 3px dashed red;
+}
+
+/* 2. Child combinator > → li is direct child of ul */
+.list > li {
+  color: purple;
+}
+
+
+
+/* 3. Adjacent sibling + → p right after h2 */
+h2 + p {
+  font-weight: bold;
+  color: brown;
+}
+
+.class{
+  text-decoration: underline;
+  color:brown;
+}
+
+/* 4. General sibling ~ → all p after h2 */
+h4 ~ p {
+  background: #f0f0f0;
+}
+
+/* In the next two rules, the class attributes must be escaped */
+
+.item\?one {
+  background-color: pink;
+  margin-bottom: 10px;
+  font-style:italic ;
+  text-shadow: 4px 4px 3px #77bdff;
+}
+
+  
+
+.\00003123item {
+  background-color: yellow;
+  text-shadow: 4px 4px 3px red ;
+}
+
+/* Universal selector * (not a separator but used a lot) */
+* {
+  margin: 0;
+}
