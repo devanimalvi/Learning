@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.title{
+    max-width: 152px;
+    margin: auto;
+}
+
+.margin-area {
+    background: yellow;
+    padding: 30px;     
+}
+
+
+.border-area {
+    border: 5px solid red;
+    padding: 20px;
+    background: lightgreen;
+}
+
+.content-area {
+    background: white;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px dashed #333;
+}
+
