@@ -1,0 +1,97 @@
+body {
+      font-family: sans-serif;
+      margin: 0;
+      width: 150%;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+    header {
+      background: purple;
+      height: 100px;
+    }
+    h1 {
+      text-align: center;
+      color: white;
+      line-height: 100px;
+      margin: 0;
+    }
+    section {
+      zoom: 0.8;
+
+      /* Flexbox CSS */
+      
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 100px;
+      width: 100%;
+      flex-direction: row;
+
+      
+    }
+
+    article {
+      padding: 10px;
+      margin: 10px;
+      background: aqua;
+      flex: 1 1 250px; /* Grow, shrink, minimum width */
+      width: 100%;
+    }
+
+    div{
+      border: 2px solid rgb(28, 6, 89);
+       padding: 10px 5px;
+    }
+
+    button{
+      font-size: medium;
+      line-height: 1.5;
+      margin-right: 25px;
+      align-items: center;
+      justify-content: space-around;
+      text-align: center;
+      justify-content: center;   /* horizontal center */
+      gap: 10px;  
+
+
+     
+    }
+
+    button:first-child {
+  align-self: flex-end;
+}
+
+.container {
+  align-items: center;
+  height: 115px;
+  justify-content:center ;
+  text-align: center; 
+}
+
+ .container button:first-child {
+  align-self: flex-end;
+  order: 1;
+}
+.grid-container{
+   grid: auto-flow / 1fr 1fr 1fr;
+   display: grid;
+   margin-top: 30px;
+}
+
+.grid-containers{
+  grid-auto-columns: minmax(10px, auto);
+  display: grid;
+  margin-top: 20px;
+}
+
+.primary-btn{
+  background-color: blueviolet;
+
+}
+
+.parent-btn{
+  background-color: darkkhaki;
+}
+
+.child-btn{
+  background-color: darkolivegreen;
+}
