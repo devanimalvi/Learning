@@ -1,0 +1,134 @@
+abbr {
+  color: #031b86;
+  font-weight: bold;
+  transition: color 0.5s ease;
+}
+
+@media (hover: hover) {
+  abbr:hover {
+    color: #001ca8;
+    transition-duration: 0.5s;
+  }
+}
+
+@media not all and (hover: hover) {
+  abbr::after {
+    content: " (" attr(title) ")";
+  }
+}
+
+@media (any-hover: hover) {
+  a:hover {
+    background: yellow;
+  }
+}
+
+input[type="checkbox"]:checked {
+  background: rgb(166, 5, 5);
+  
+}
+
+@media (any-pointer: fine) {
+  input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(194, 11, 29);
+  }
+}
+
+@media (any-pointer: coarse) {
+  input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(5, 53, 116);
+  }
+}
+
+/* Minimum allowed aspect ratio */
+/* Select aspect ratios 8/5 = 1.6 and above */
+@media (min-aspect-ratio: 8/5) {
+  div {
+    background: #9999ff; /* blue */
+  }
+}
+
+/* Maximum allowed aspect ratio */
+/* Select aspect ratios 3/2 = 1.5 and below */
+@media (max-aspect-ratio: 3/2) {
+  div {
+    background: #99ff99; /* green */
+  }
+}
+
+/* Exact aspect ratio, put it at the bottom to avoid override */
+@media (aspect-ratio: 1/1) {
+  div {
+    background: #ff9999; /* red */
+  }
+}
+
+.content{
+  margin-top: 3em;
+  text-emphasis: filled rgb(0, 85, 255);
+  text-decoration-color: rgb(255, 255, 0);
+}
+
+.parent{
+  margin-top:3em ;
+  text-emphasis-color: rgb(90 200 160 / 0.8);
+}
+
+.child{
+  margin-bottom: 2em;
+  display: inline-block;
+  text-decoration-color: rgb(25, 0, 255);
+
+}
+
+
+  
+
+/* Any color device with at least 8 bits per color component */
+@media (min-color: 8) {
+  p {
+    color: #4d13ba;
+     padding: 10px;
+     border: solid;
+     border-width:4px ;
+     
+
+  }
+}
+
+
+@media (display-mode: fullscreen) {
+  body {
+    margin: 0;
+    border: 6px solid;
+  }
+}
+
+@media (dynamic-range: standard) {
+  p {
+    
+    border-color: red yellow green hsl(60 90% 50% / 0.8);
+  }
+}
+
+@media (dynamic-range: high) {
+  p {
+    color: green;
+  }
+}
+
+
+em {
+  text-emphasis-color: rgb(2, 0, 128);
+  text-emphasis-style: "*";
+}
+
+
+
+
