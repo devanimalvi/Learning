@@ -1,0 +1,236 @@
+.container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+p {
+  color: red;
+  font-size: clamp(0.25rem, 2vw, 1rem);
+}
+
+.port-container {
+  overflow: hidden;
+}
+
+.port {
+  animation-duration: 3s;
+  animation-name: slide-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes slide-in {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+@keyframes grow-shrink {
+  25%,
+  75% {
+    scale: 100%;
+  }
+
+  50% {
+    scale: 200%;
+    color: magenta;
+  }
+}
+
+@media (overflow-inline: scroll) {
+  p {
+    color: red;
+  }
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  border: solid;
+  margin: 0;
+}
+
+input[type="checkbox"]:checked {
+  background: gray;
+}
+
+@media (pointer: fine) {
+  input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    border-width: 1px;
+    border-color: blue;
+  }
+}
+
+@media (pointer: coarse) {
+  input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    border-width: 2px;
+    border-color: red;
+  }
+}
+
+.theme-a {
+  background: #ddccaa;
+  color: #773311;
+  margin-top: 10px;
+  max-width: 50%;
+}
+@media (prefers-color-scheme: dark) {
+  .theme-a.adaptive {
+    background: #775533;
+    color: #ddccbb;
+    outline: 5px dashed black;
+  }
+}
+
+.theme-b {
+  background: #444477;
+  color: #bbbbdd;
+  margin-top: 10px;
+  max-width: 50%;
+}
+@media (prefers-color-scheme: light) {
+  .theme-b.adaptive {
+    background: #bbccdd;
+    color: #333344;
+    outline: 5px dotted black;
+  }
+}
+
+.contrast {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  outline: 3px dashed black;
+  color: blue;
+  width: min(50vw, 200px);
+}
+
+@media (prefers-contrast: more) {
+  .contrast {
+    outline: 2px solid black;
+  }
+}
+
+.animation {
+  animation: pulse 1s linear infinite both;
+  background-color: purple;
+}
+
+/* Tone down the animation to avoid vestibular motion triggers. */
+@media (prefers-reduced-motion: reduce) {
+  .animation {
+    animation: dissolve 4s linear infinite both;
+    background-color: green;
+    text-decoration: overline;
+  }
+}
+
+.container {
+  background-color: rgb(150, 198, 194);
+  grid-template-columns: minmax(20px, auto) 1fr 1fr;
+}
+
+.box1 {
+  width: 50%;
+  margin-left: 20%;
+  background-color: chartreuse;
+}
+
+.box2 {
+  width: 30%;
+  margin-left: 60%;
+  background-color: pink;
+}
+html {
+  font-family: sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.outer {
+  width: 100%;
+  height: 50px;
+  background-color: #eeeeee;
+  position: relative;
+  margin-top: 20px;
+  max-width: 20%;
+}
+
+.inner {
+  height: 50px;
+  background-color: #999999;
+  box-shadow: inset 3px 3px 5px rgb(255 255 255 / 50%), inset -3px -3px 5px rgb(0 0 0 / 50%);
+}
+
+.result {
+  height: 20px;
+  box-shadow: inset 3px 3px 5px rgb(255 255 255 / 50%), inset -3px -3px 5px rgb(0 0 0 / 50%);
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.result code {
+  position: absolute;
+  margin-left: 20px;
+}
+
+.results {
+  margin-top: 10px;
+}
+
+.input-container {
+  position: absolute;
+  display: flex;
+  justify-content: center; /* center me laane ke liye */
+  align-items: center;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+label {
+  margin-right: 10px;
+}
+.target {
+  transition-property: background-color;
+  transition-duration: 1s;
+  background-color: #cccccc;
+  justify-content: center;
+  transition-duration: 2s;
+  transition-property: margin-right, color;
+}
+
+.target:hover,
+.target:focus {
+  background-color: #eeeeee;
+}
+@keyframes move {
+  from {
+    margin-right: 0;
+    color: red;
+  }
+  to {
+    margin-right: 20px;
+    color: blue;
+  }
+}
+
+p {
+  animation: move 2s infinite;
+}
+.avatar {
+  width: 100px;
+  clip-path: circle(50%);
+}
