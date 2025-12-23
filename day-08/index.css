@@ -158,12 +158,13 @@ html {
 }
 
 .outer {
-  width: 100%;
+  width: 20%;
   height: 50px;
-  background-color: #eeeeee;
-  position: relative;
-  margin-top: 20px;
-  max-width: 20%;
+  background-color: #098b76;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto; /* CENTER */
 }
 
 .inner {
@@ -204,12 +205,13 @@ label {
   margin-right: 10px;
 }
 .target {
-  transition-property: background-color;
-  transition-duration: 1s;
   background-color: #cccccc;
+  display: flex;
   justify-content: center;
-  transition-duration: 2s;
-  transition-property: margin-right, color;
+  transition: background-color 1s, margin-right 2s, color 2s;
+  background-color: #eeeeee;
+  margin: 20px auto;
+  color: red;
 }
 
 .target:hover,
@@ -233,4 +235,5 @@ p {
 .avatar {
   width: 100px;
   clip-path: circle(50%);
+  float: left;
 }

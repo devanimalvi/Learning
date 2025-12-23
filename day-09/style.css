@@ -1,0 +1,195 @@
+/* BASIC */
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 20px;
+}
+
+/* BOX MODEL */
+.box {
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* SELECTORS */
+#title {
+  color: rgb(197, 197, 209);
+}
+
+.form-title {
+  color: beige;
+}
+
+.images {
+  color: beige;
+}
+.flex {
+  color: beige;
+}
+
+.port {
+  color: beige;
+}
+
+.ani {
+  color: beige;
+}
+
+.grid {
+  color: beige;
+}
+.post {
+  color: beige;
+}
+
+.img-class {
+  height: 200px;
+  width: 400px;
+  margin-bottom: 20px; /* 👈 image & video vachche space */
+}
+
+.img-class img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.vid-class {
+  height: 200px;
+  width: 400px;
+}
+
+.vid-class video {
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.flex-container {
+  display: flex; /* flex start */
+  justify-content: center; /* horizontal center */
+  align-items: center; /* vertical center */
+  gap: 10px; /* space between boxes */
+  height: 100px;
+  border: 3px solid #000;
+}
+
+.box {
+  background-color: aqua;
+}
+
+.over {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.over svg {
+  justify-self: end;
+  width: 60px;
+  height: 50px;
+  color: white;
+}
+
+.text {
+  color: gray;
+  animation-duration: 3s;
+  animation-name: slide-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes slide-in {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+@keyframes grow-shrink {
+  25%,
+  75% {
+    scale: 100%;
+  }
+
+  50% {
+    scale: 200%;
+    color: rgb(255, 0, 38);
+  }
+}
+
+@media (overflow-inline: scroll) {
+  p {
+    color: red;
+  }
+}
+
+/* LAYOUT */
+.flex {
+  display: flex;
+  gap: 20px;
+}
+
+/* GRID */
+.grid-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  border: 3px solid #000;
+  height: 20px;
+}
+
+/* POSITION */
+.relative-box {
+  position: relative;
+  border: 3px solid #000;
+  height: 20px;
+}
+.absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: red;
+  color: #fff;
+  padding: 2px 5px;
+}
+
+/* ANIMATION */
+.animal {
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  animation: move 2s infinite;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(150px);
+  }
+}
+
+.bg-box {
+  background-image: url("wp6438851.jpg");
+  background-size: cover; /* image fit */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer {
+  background-color: aqua;
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;
+  height: 20px;
+}
