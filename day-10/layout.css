@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f6f8fa;
+  color: #1f2933;
+  font-family: Googlesans, Arial, sans-serif;
+}
+
+/* SECTION */
+.core-values {
+  padding: 70px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* MAIN LAYOUT */
+/*.values-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* LEFT CONTENT */
+.section-title {
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2933;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 70px; /* line ni length */
+  height: 3px; /* line ni thickness */
+  background-color: #00a88e; /* green color */
+  border-radius: 2px;
+}
+
+.benefit {
+  color: #060606;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.h2 {
+  font-size: 32px;
+  line-height: 36px;
+}
+.font-primary {
+  color: #00ac8d;
+  font-weight: 500;
+}
+
+.benefit-main-description {
+  max-width: 500px;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+.values-image {
+  width: 50%;
+  height: 400px; /* image ni real height */
+}
+
+.values-image img {
+  width: 200%;
+  height: 150%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.values-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.benefit-list {
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+  grid-template-rows: auto;
+  margin-top: 40px;
+}
+.W-layout-grid {
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.benefit {
+  background-color: #eff4f3;
+  color: white;
+  padding: 40px;
+}
+
+.W layout flix {
+  flex-direction: row;
+  display: flex;
+}
+.benefit-img-contact {
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+}
+.benefits-img {
+  z-index: 1;
+  position: relative;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  display: inline-block;
+}
