@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/layout.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Our Core Values</title>
+    <link rel="stylesheet" href="./Our Core Values_files/layout.css">
+</head>
+
+<body>
+
+    <section class="core-values">
+        <div class="container">
+
+            <div class="values-wrapper">
+
+                <!-- LEFT CONTENT -->
+                <div class="values-content">
+                    <span class="section-title">Our Core Values</span>
+
+                    <h2 class="benefit">
+                        The principles that shape
+                        <span class="font-primary">how we work and who we are</span>
+                    </h2>
+
+                    <p class="benefit-main-description">
+                        At the heart of everything we do are values that guide our decisions,
+                        inspire our team, and help us create meaningful impact for the people we serve.
+                    </p>
+
+                    <div class="values-cards">
+
+                        <div class="card">
+                            <img src="./Our Core Values_files/689f03b68e1fbbe56520d70b_chart-setting.svg" class="icon">
+                            <h4>Integrity</h4>
+                            <p>We work with honesty, transparency, and responsibility in every interaction.</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="./Our Core Values_files/icon2.svg" class="icon">
+                            <h4>Innovation</h4>
+                            <p>We embrace creativity and continuously explore smarter solutions.</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="./Our Core Values_files/icon3.svg" class="icon">
+                            <h4>Collaboration</h4>
+                            <p>We believe teamwork fuels growth and better outcomes.</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="./Our Core Values_files/icon4.svg" class="icon">
+                            <h4>Excellence</h4>
+                            <p>We pursue the highest standards in quality and performance.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT IMAGE -->
+                <div class="values-image">
+                    <img src="./Our Core Values_files/OIP (1).webp" alt="Team working together">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
