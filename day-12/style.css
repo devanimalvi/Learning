@@ -1,0 +1,69 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  padding-top: 70px;
+}
+
+.food {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.food-bar {
+  background-color: white;
+  padding: 12px 24px;
+  letter-spacing: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.food-bar-item {
+  float: left;
+  text-decoration: none;
+  color: black;
+  padding: 8px 16px;
+}
+
+.food-right a {
+  float: right;
+  text-decoration: none;
+  color: black;
+  padding: 8px 16px;
+}
+
+.food-content {
+  max-width: 1600px;
+  margin: auto;
+  position: relative;
+}
+
+/* IMAGE */
+.food-image {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  display: block;
+}
+
+/* TEXT ON IMAGE */
+.food-display {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+
+/* HEADING */
+.food-large {
+  font-size: 48px;
+  color: #777;
+  letter-spacing: 5px;
+  font-weight: 400;
+}
