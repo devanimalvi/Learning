@@ -1,56 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Foodie Restaurant</title>
 
-  <!-- CSS LINK -->
-  <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Foodies Restaurant</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="logo">
-      
-  
-      <span>Foodie</span>
+
+
+<div class="food">
+    <div class="food-bar">
+
+        <a href="#home" class="food-bar-item">Foodies</a>
+
+        <div class="food-right">
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </div>
+
     </div>
+</div>
 
-    <!-- NAVIGATION -->
-    <nav>
-      <ul class="nav-list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Booking</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- MAIN SECTION -->
-  <article class="hero">
-    <h1>Book Your Table</h1>
-    <p>Delicious food & cozy place</p>
-    <button>Reserve Now</button>
-  </article>
+<header class="food-content" id="home">
+    <img src="home.jpg" alt="Restaurant Image" class="food-image">
 
-  <!-- SERVICES -->
-  <section class="services">
-    <h2>Why Choose Us</h2>
+    <div class="food-display">
+        <h1 class="food-large">Le Catering</h1>
+    </div>
+</header>
+<div class="food-contact">
+    <div class="food-padding" id="about"></div>
 
-    <ol>
-      <li>Fresh Ingredients</li>
-      <li>Best Chefs</li>
-      <li>Online Booking</li>
-    </ol>
-  </section>
+    <div class="food-small">
+        <img src="about.jpg" class="food-round">
+    </div>
+    <div class="food-color"></div>
+    <h1 class="food-center">About Catering</h1>
+    <br>
+    <h5 class="food-center">Tradition since 1889</h5>
+    <p class="food-para">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+    <span class="food-er">seasonal </span>
+    "ingredients"
+</div>
+<div class="food-padding" id="menu"></div>
+<div class="food-center">
+    <h1 class="food-menu">Our Menu</h1>
+    <br>
+    <h4>Bread Basket</h4>
+    <p class="food-grey">Assortment of fresh baked fruit breads and muffins 5.50</p>
+    <br>
+    <h4>Honey Almond Granola with Fruits</h4>
+    <p class="food-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+    <h4>Belgian Waffle</h4>
+    <p class="food-grey"> flavored batter with malted flour 7.50</p>
+    <h4>Scrambled eggs</h4>
+    <p class="food-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+    <h4>Blueberry Pancakes</h4>
+    <p class="food-grey">With syrup, butter and lots of berries 8.50</p>
+</div>
+<div class="food-padding-large">
+    <img src="menu.jpg">
+</div>
+<div class="food-padding" id="contact">
+    <h1>contact</h1>
+    <br>
+    <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+    <div class="food-large">
+        <p class="food-grey"></p>
+        <b>Catering Service, 42nd Living St, 43043 New York, NY</b>
+        <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+    </div>
+    <div class="food-contact"></div>
+</div>
+<footer class="footer contain">
+    <p>powered by</p>
+</footer>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>© 2025 Foodie Restaurant</p>
-  </footer>
+
+</div>
 
 </body>
+
 </html>
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  padding-top: 70px;
+}
+
+.food {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.food-bar {
+  background-color: white;
+  padding: 12px 24px;
+  letter-spacing: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.food-bar-item {
+  float: left;
+  text-decoration: none;
+  color: black;
+  padding: 8px 16px;
+}
+
+.food-right a {
+  float: right;
+  text-decoration: none;
+  color: black;
+  padding: 8px 16px;
+}
+
+.food-content {
+  max-width: 1600px;
+  margin: auto;
+  position: relative;
+}
+
+/* IMAGE */
+.food-image {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  display: block;
+}
+
+/* TEXT ON IMAGE */
+.food-display {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+
+/* HEADING */
+.food-large {
+  font-size: 48px;
+  color: #777;
+  letter-spacing: 5px;
+  font-weight: 400;
+}
+.food-content {
+  margin-left: auto;
+  margin-right: auto;
+}
+.food-padding {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.food-small {
+  width: 50%;
+  padding: 12px 24px;
+  float: left;
+  clear: both;
+}
+.food-round {
+  opacity: 1;
+  border-radius: 4px;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+.food-color {
+  width: 50%;
+  padding: 12px 24px;
+  float: left;
+  clear: both;
+}
+
+.food-center {
+  text-align: center;
+  letter-spacing: 5px;
+  font-family: " Playfair display ";
+  font-weight: 400;
+  margin: 10px 0px;
+  font-size: 36px;
+}
+
+.food-para {
+  font-size: 18px;
+}
+.food-er {
+  color: black;
+  background-color: beige;
+}
+.food-padding {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+.food-center {
+  text-align: center;
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+  margin: 0 10px;
+  font-weight: 400;
+  font-size: 36px;
+}
+.food-menu {
+  text-align: center;
+  letter-spacing: 5px;
+  font-family: "playfair display";
+  margin: 10px 0;
+  font-weight: 400;
+}
+h4 {
+  font-family: "playfair display";
+  letter-spacing: 5px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.food-grey {
+  color: #777;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.food-padding-large {
+  size: 100%;
+  padding: 12px 24px;
+}
+.food-padding {
+  opacity: 1;
+  border-radius: 4px;
+  max-width: 100%;
+  height: auto;
+}
+.food-grey {
+  color: #777;
+  font-size: 18px;
+  box-sizing: inherit;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
