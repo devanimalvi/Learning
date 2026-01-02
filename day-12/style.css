@@ -1,154 +1,179 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Playfair Display", serif;
 }
 
-body {
-  font-family: "Playfair Display", serif;
-  padding-top: 70px;
-}
 
 .food {
   position: fixed;
   top: 0;
   width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
 
 .food-bar {
-  background-color: white;
-  padding: 12px 24px;
-  letter-spacing: 4px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+}
+
+.food-bar a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 20px;
 }
 
 .food-bar-item {
-  float: left;
-  text-decoration: none;
-  color: black;
-  padding: 8px 16px;
+  font-size: 22px;
+  font-weight: bold;
 }
 
-.food-right a {
-  float: right;
-  text-decoration: none;
-  color: black;
-  padding: 8px 16px;
-}
 
 .food-content {
-  max-width: 1600px;
-  margin: auto;
   position: relative;
+  margin-top: 80px;
 }
 
-/* IMAGE */
 .food-image {
   width: 100%;
-  height: 700px;
+  height: 80vh;
   object-fit: cover;
-  display: block;
 }
 
-/* TEXT ON IMAGE */
 .food-display {
   position: absolute;
   bottom: 40px;
   left: 40px;
+  color: #fff;
 }
 
-/* HEADING */
 .food-large {
-  font-size: 48px;
-  color: #777;
-  letter-spacing: 5px;
-  font-weight: 400;
-}
-.food-content {
-  margin-left: auto;
-  margin-right: auto;
-}
-.food-padding {
-  padding-top: 64px;
-  padding-bottom: 64px;
-}
-.food-small,
-.food-color {
-  width: 50%;
-  float: left;
-  padding: 12px 24px;
-}
-
-.food-round {
-  opacity: 1;
-  border-radius: 4px;
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-  border-style: none;
-}
-
-.food-center {
-  text-align: center;
-  letter-spacing: 5px;
-  font-family: " Playfair display ";
-  font-weight: 400;
-  margin: 10px 0px;
   font-size: 36px;
 }
 
-.food-para {
-  font-size: 18px;
-}
-.food-er {
-  color: black;
-  background-color: beige;
-}
-.food-padding {
-  padding: 64px 0;
+
+
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 80px 10%;
 }
 
-.food-section {
-  margin: 64px 0;
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 6px;
 }
 
-.food-center {
-  text-align: center;
-  font-family: "Playfair Display";
-  letter-spacing: 5px;
-  margin: 0 10px;
-  font-weight: 400;
+.about-content {
+  flex: 1;
+}
+
+.about-content h1 {
   font-size: 36px;
-}
-.food-menu {
-  text-align: center;
-  letter-spacing: 5px;
-  font-family: "playfair display";
-  margin: 10px 0;
-  font-weight: 400;
-}
-h4 {
-  font-family: "playfair display";
-  letter-spacing: 5px;
-  font-weight: 400;
-  margin: 10px 0;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
 }
 
-.food-padding-large {
-  size: 100%;
-  padding: 12px 24px;
+.about-content h5 {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  background: #f1f1f1;
+  padding: 4px 8px;
+}
+
+
+.food-padding {
+  display: flex;
+  gap: 50px;
+  padding: 80px 10%;
+  align-items: center;
 }
 
 .food-grey {
   color: #777;
-  font-size: 18px;
-  margin-bottom: 16px;
-  box-sizing: inherit;
 }
-  
-img {
-  vertical-align: middle;
-  border-style: none;
+
+.food-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+
+.food-padding-64 {
+  padding: 80px 10%;
+}
+
+.food-padding-64 p {
+  margin-bottom: 18px;
+  line-height: 1.8;
+}
+
+
+.food-padding-16 {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #ccc;
+}
+
+.food-padding-16:focus {
+  outline: none;
+  border-color: #000;
+}
+
+
+.food-section {
+  background: #f1f1f1;
+  border: none;
+  padding: 14px 28px;
+  cursor: pointer;
+}
+
+.food-section:hover {
+  background: #ddd;
+}
+
+footer {
+  text-align: center;
+  padding: 32px;
+  background: #f1f1f1;
+  margin-top: 40px;
+}
+
+
+@media (max-width: 768px) {
+  .about-section,
+  .food-padding {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 100%;
+  }
+
+  .food-display {
+    left: 20px;
+  }
 }
