@@ -1,0 +1,554 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.food {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.food-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+}
+
+.food-bar a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 20px;
+}
+
+.food-bar-item {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* HERO */
+.food-content {
+  position: relative;
+  margin-top: 80px;
+}
+
+.food-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.food-display {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  color: #100f0f;
+}
+
+.food-large {
+  font-size: 36px;
+}
+
+/* ABOUT */
+.about-section {
+  padding: 80px 0;
+}
+
+.about-section .container {
+  max-width: 1100px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-image,
+.about-content {
+  width: 50%;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.about-content h5 {
+  color: #777;
+  letter-spacing: 4px;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+
+.about-content p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  background: #f1f1f1;
+  padding: 2px 6px;
+}
+
+/* MENU */
+.food-padding-large {
+  padding: 80px 0;
+}
+
+.container.menu-section {
+  max-width: 1200px;
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.menu-content,
+.menu-image {
+  width: 50%;
+}
+
+.menu-content h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+  letter-spacing: 6px;
+}
+
+.menu-content h4 {
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+h1{
+    margin: 10px 0;
+}
+
+.menu-content p {
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.menu-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* FORM */
+.food-padding-64 {
+  padding: 80px 10%;
+}
+
+.food-padding-64 p {
+  margin-bottom: 18px;
+  line-height: 1.8;
+}
+
+.food-padding-16 {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #ccc;
+}
+
+.food-padding-16:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.food-section {
+  background: #f1f1f1;
+  border: none;
+  padding: 14px 28px;
+  cursor: pointer;
+}
+
+.food-section:hover {
+  background: #ddd;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 32px;
+  background: #f1f1f1;
+  margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-section .container,
+  .container.menu-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image,
+  .about-content,
+  .menu-content,
+  .menu-image {
+    width: 100%;
+  }
+
+  .food-display {
+    left: 20px;
+  }
+
+  .menu-content h1 {
+    text-align: left;
+  }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Foodies Restaurant</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="food">
+  <div class="container">
+    <div class="food-bar">
+      <a href="#home" class="food-bar-item">Foodies</a>
+
+      <div class="food-right">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="food-content" id="home">
+  <img src="home.jpg" alt="Restaurant Image" class="food-image">
+
+  <div class="food-display">
+    <h1 class="food-large">Le Catering</h1>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="container">
+
+    <div class="about-image">
+      <img src="about.jpg" alt="About Catering">
+    </div>
+
+    <div class="about-content">
+      <h1>About Catering</h1>
+      <h5>Tradition since 1889</h5>
+
+      <p>
+        The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet,
+        consectetur adipiscing elit.
+      </p>
+
+      <p>
+        We only use <span class="highlight">seasonal</span> ingredients.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<hr>
+
+<!-- MENU -->
+<section class="food-padding-large" id="menu">
+  <div class="container menu-section">
+
+    <div class="menu-content">
+      <h1>Our Menu</h1>
+
+      <h4>Bread Basket</h4>
+      <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+
+      <h4>Honey Almond Granola</h4>
+      <p>Natural cereal of honey toasted oats 7.00</p>
+    </div>
+
+    <div class="menu-image">
+      <img src="menu.jpg" alt="Menu">
+    </div>
+
+  </div>
+</section>
+
+<hr>
+
+<!-- CONTACT -->
+<section class="food-padding-64" id="contact">
+  <div class="container">
+    <h1>Contact</h1>
+
+    <p>We offer full-service catering for any event.</p>
+
+    <p class="food-large">
+      <b>Catering Service, 42nd Living St, New York, NY</b>
+    </p>
+
+    <form>
+      <p><input class="food-padding-16" type="text" placeholder="Name"></p>
+      <p><input class="food-padding-16" type="number" placeholder="How many people"></p>
+      <p><input class="food-padding-16" type="datetime-local"></p>
+      <p><input class="food-padding-16" type="text" placeholder="Message"></p>
+      <p><button class="food-section">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>Powered by Foodies</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.food {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.food-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+}
+
+.food-bar a {
+  text-decoration: none;
+  color: #000;
+  margin: 10px;
+  padding: 8px 16px;
+}
+
+.food-bar-item {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.food-content {
+  position: relative;
+}
+
+.food-image {
+  width: 100%;
+  height: 700px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.food-display {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  color: #1e1c1c;
+}
+
+.food-large {
+  font-size: 36px;
+}
+
+.about-section {
+  padding: 80px 0;
+}
+
+.about-section .container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.about-image,
+.about-content {
+  width: 50%;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.about-content h5 {
+  color: #777;
+  letter-spacing: 4px;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+
+.about-content p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  background: #f1f1f1;
+  padding: 2px 6px;
+}
+
+.food-padding-large {
+  padding: 80px 0;
+}
+
+.container.menu-section {
+  max-width: 1200px;
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.menu-content,
+.menu-image {
+  width: 50%;
+}
+
+.menu-content h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+  letter-spacing: 6px;
+}
+
+.menu-content h4 {
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.menu-content p {
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.menu-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.food-padding-64 {
+  padding: 80px 40px;
+  color: #1a1717;
+}
+
+h1 contact {
+  margin: 10px;
+}
+
+.food-padding-64 p {
+  margin-bottom: 18px;
+  line-height: 1.8;
+}
+
+.food-padding-16 {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #ccc;
+}
+
+.food-padding-16:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.food-section {
+  background: #f1f1f1;
+  border: none;
+  padding: 14px 28px;
+  cursor: pointer;
+}
+
+.food-section:hover {
+  background: #ddd;
+}
+
+footer {
+  text-align: center;
+  padding: 32px;
+  background: #f1f1f1;
+  margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-section .container,
+  .container.menu-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image,
+  .about-content,
+  .menu-content,
+  .menu-image {
+    width: 100%;
+  }
+
+  .food-display {
+    left: 20px;
+  }
+
+  .menu-content h1 {
+    text-align: left;
+  }
+}

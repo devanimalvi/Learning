@@ -1,159 +1,141 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Foodies Restaurant</title>
 
-
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-
-
     <link rel="stylesheet" href="style.css">
 </head>
 
+<body>
+
+    <header class="food">
+        <div class="container">
+            <div class="food-bar">
+                <a href="#home" class="food-bar-item">Foodies</a>
+
+                <div class="food-right">
+                    <a href="#about">About</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="food-content" id="home">
+        <div class="container">
+            <img src="home.jpg" alt="Restaurant Image" class="food-image">
+
+            <div class="food-display">
+                <h1 class="hero-title">Le Catering</h1>
+            </div>
+        </div>
 
 
-<header class="food">
-    <div class="container">
-        <div class="food-bar">
+    </section>
 
-            <a href="#home" class="food-bar-item">Foodies</a>
 
-            <div class="food-right">
-                <a href="#about">About</a>
-                <a href="#menu">Menu</a>
-                <a href="#contact">Contact</a>
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+        <div class="container">
+
+            <div class="about-image">
+                <img src="about.jpg" alt="About Catering">
+            </div>
+
+            <div class="about-content">
+                <h1>About Catering</h1>
+                <h5>Tradition since 1889</h5>
+
+                <p>
+                    The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.
+                </p>
+
+                <p>
+                    We only use <span class="highlight">seasonal</span> ingredients.
+                </p>
             </div>
 
         </div>
-    </div>
-</header>
+    </section>
 
+    <hr>
 
-<section class="food-content" id="home">
-    <img src="home.jpg" alt="Restaurant Image" class="food-image">
+    <!-- MENU -->
+    <!-- MENU -->
+    <section cla ss="food-padding-large" id="menu">
+        <div class="container menu-section">
 
-    <div class="food-display">
-        <h1 class="food-large">Le Catering</h1>
-    </div>
-</section>
+            <!-- LEFT SIDE: Menu Items -->
+            <div class="menu-content">
+                <h1 class="menu-our">Our Menu</h1>
 
+                <div class="menu-item">
+                    <h4>Bread Basket</h4>
+                    <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+                </div>
 
-<section class="about-section" id="about">
-    <div class="container">
+                <div class="menu-item">
+                    <h4>Honey Almond Granola with Fruits</h4>
+                    <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                </div>
 
-        <div class="about-image">
-            <img src="about.jpg" alt="About Catering">
+                <div class="menu-item">
+                    <h4>Belgian Waffle</h4>
+                    <p>Vanilla flavored batter with malted flour 7.50</p>
+                </div>
+
+                <div class="menu-item">
+                    <h4>Scrambled Eggs</h4>
+                    <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+                </div>
+
+                <div class="menu-item">
+                    <h4>Blueberry Pancakes</h4>
+                    <p>With syrup, butter and lots of berries 8.50</p>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE: Menu Image -->
+            <div class="menu-image">
+                <img src="menu.jpg" alt="Menu">
+            </div>
+
         </div>
+    </section>
 
-        <div class="about-content">
-            <h1>About Catering</h1>
-            <h5>Tradition since 1889</h5>
 
-            <p>
-                The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
+    <hr>
+
+    <!-- CONTACT -->
+    <section class="food-padding-64" id="contact">
+        <div class="container">
+            <h1 class="contact-our">Contact</h1>
+
+            <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact .
             </p>
 
-            <p>
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                We only use <span class="highlight">seasonal</span> ingredients.
+            <p class="food-large">
+                Catering Service, 42nd Living St, New York, NY
             </p>
+
+            <form>
+                <p><input class="food-padding-16" type="text" placeholder="Name"></p>
+                <p><input class="food-padding-16" type="number" placeholder="How many people"></p>
+                <p><input class="food-padding-16" type="datetime-local"></p>
+                <p><input class="food-padding-16" type="text" placeholder="Message"></p>
+                <p><button class="food-section">SEND MESSAGE</button></p>
+            </form>
         </div>
+    </section>
 
-    </div>
-</section>
-
-<hr>
-
-
-<section class="food-padding-large" id="menu">
-    <div class="container menu-section">
-
-
-        <div class="menu-content">
-            <h1>Our Menu</h1>
-
-            <h4>Bread Basket</h4>
-            <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
-
-            <h4>Honey Almond Granola with Fruits</h4>
-            <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
-
-            <h4>Belgian Waffle</h4>
-            <p>Vanilla flavored batter with malted flour 7.50</p>
-
-            <h4>Scrambled eggs</h4>
-            <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
-
-            <h4>Blueberry Pancakes</h4>
-            <p>With syrup, butter and lots of berries 8.50</p>
-        </div>
-
-        <div class="menu-image">
-            <img src="menu.jpg" alt="Our Menu Image">
-        </div>
-
-    </div>
-</section>
-
-<hr>
-
-<section class="food-padding-64" id="contact">
-    <div class="container">
-        <h1>Contact</h1>
-        <br>
-
-        <p>
-            We offer full-service catering for any event, large or small.
-            We understand your needs and we will cater the food to satisfy
-            the biggest criteria of them all, both look and taste.
-            Do not hesitate to contact us.
-        </p>
-
-        <p class="food-large">
-            <b>Catering Service, 42nd Living St, 43043 New York, NY</b>
-        </p>
-
-        <p>
-            You can also contact us by phone 00553123-2323 or email
-            catering@catering.com, or you can send us a message here:
-        </p>
-
-        <form>
-
-            <p>
-                <input class="food-padding-16" type="text" placeholder="Name" required>
-            </p>
-
-            <p>
-                <input class="food-padding-16" type="number" placeholder="How many people" required>
-            </p>
-
-            <p>
-                <input class="food-padding-16" type="datetime-local" required>
-            </p>
-
-            <p>
-                <input class="food-padding-16" type="text" placeholder="Message / Special requirements" required>
-            </p>
-
-            <p>
-                <button class="food-section" type="submit">
-                    SEND MESSAGE
-                </button>
-            </p>
-
-        </form>
-    </div>
-</section>
-
-<footer class="food-center">
-    <p>Powered by</a></p>
-</footer>
+    <footer>
+        <p>Powered by Foodies</p>
+    </footer>
 
 </body>
 
