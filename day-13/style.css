@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2px;
+}
+
+/*header*/
+
+.architecture {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.br-white {
+  background: #fff;
+  padding: 14px 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  letter-spacing: 4px;
+  width: 100%;
+}
+
+/* LEFT & RIGHT */
+.br-bar-item {
+  float: left;
+}
+
+.br-right {
+  float: right;
+}
+
+/* LOGO */
+.br-logo {
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+
+/* MENU */
+.br-button {
+  margin-left: 25px;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+}
+
+.br-button:hover {
+  text-decoration: underline;
+}
+
+/* CLEAR FLOAT */
+.br-white::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.hr-display {
+  position: relative;
+}
+
+.Architecture-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  top: 0;
+  left: 0;
+  position: relative;
+}
+
+/* CENTER TEXT */
+.hr-margin-top {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* TEXT */
+.hr-text {
+  color: #fff;
+  font-size: 36px;
+  letter-spacing: 4px;
+}
+
+/* BLACK BOX */
+.br-box {
+  background: #000;
+  color: #fff;
+  padding: 8px 16px;
+  margin-right: 10px;
+  display: inline-block;
+  opacity: 0.75;
+}
+
+/* ARCHITECTS TEXT */
+.hr-height {
+  color: #fff;
+}
+
+/*project section*/
+.project-content {
+  max-width: 1564px;
+  padding: 8px 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-container {
+  padding-bottom: 32px;
+  padding-top: 32px;
+  padding: 0.01em 16px;
+  box-sizing: inherit;
+}
+
+.project-boader {
+  border-color: white;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-bottom: 1px solid gray;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.project-padding {
+  padding: 0 8px;
+}
+
+.project-margin-bottom {
+  padding: 0 8px;
+}
+
+.project-display-container {
+  position: relative;
+}
+
+.project-leftright {
+  color: aliceblue;
+  background-color: black;
+  padding: 8px 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

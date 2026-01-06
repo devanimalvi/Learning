@@ -55,10 +55,10 @@
   height: 700px;
   object-fit: cover;
   display: block;
-    position: absolute;
+  position: absolute;
   bottom: 40px;
   left: 0;
-  right: 0;
+  
 }
 
  
@@ -134,7 +134,7 @@
 }
 
 .menu-our {
-  margin: 10px 0;
+  margin: 25px 0;
 }
 
 .menu-item h4 {
